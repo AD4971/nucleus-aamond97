@@ -13,7 +13,6 @@ export default function Home() {
     setAutoRotate((prev) => !prev)
   }, [])
 
-  // Handle keyboard events for rotation toggle
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (e.key.toLowerCase() === "r") {
@@ -32,8 +31,16 @@ export default function Home() {
         particleSize={particleSize}
         setParticleSize={setParticleSize}
       />
-      <div className="absolute bottom-4 right-6 text-xs text-white font-semibold font-inter">
-        <span className="opacity-60">Nuclues</span> <span className="opacity-30">by Aamon</span>
+      <div className="absolute bottom-4 right-6 text-base text-white font-semibold font-inter">
+        <span className="opacity-60">Nuclues</span> <span className="opacity-30">by Aamon</span>{" "}
+        <a
+          href="https://github.com/AD4971/nucleus-aamond97" // <-- Replace with your actual repo link
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white opacity-20 underline hover:opacity-50 transition"
+        >
+          (Source Code)
+        </a>
       </div>
     </main>
   )
