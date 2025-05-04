@@ -32,7 +32,7 @@ export default function Home() {
         setParticleSize={setParticleSize}
       />
       <div className="absolute bottom-4 right-6 text-base text-white font-semibold font-inter">
-        <span className="opacity-60">Nuclues</span> <span className="opacity-30">by Aamon</span>{" "}
+        <span className="opacity-60">Nucleus</span> <span className="opacity-30">by Aamon</span>{" "}
         <a
           href="https://github.com/AD4971/nucleus-aamond97" // <-- Replace with your actual repo link
           target="_blank"
